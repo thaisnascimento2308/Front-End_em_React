@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Heebo", sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #fff;
+  height: 80px;
+}
+
+/* Menu padrão (desktop) */
+
+header #navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 80px;
+  background-color: #fff;
+}
+
+header #navbar .nav-brand {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+header #navbar .nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 31px;
+}
+
+
+header #navbar .nav-list .nav-item a {
+  text-decoration: none;
+  color: #21243D;
+  font-weight: 500;
+}
+
+header #navbar .nav-list .nav-item a.active {
+  color: #2e67da;
+  font-weight: bold;
+}
+
+header #navbar .nav-list .nav-item a:hover {
+  color: #2d0ebb; /*#333*/
+  transition: 0.3s;
+}
+
+/* Ícone hambúrguer (escondido no desktop) */
+header #navbar .hamburguer-menu {
+  display: none;
+}
+
+@media (max-width: 740px) {
+  header #navbar .hamburguer-menu {
+    display: block;
+  }
+  header #navbar .nav-list {
+    /*Sugestão*/
+    display: none; /* Oculta por padrão */
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+
+  header #navbar .nav-list a.active {
+    display: flex; /* Mostra ao abrir */
+  }
+  header #navbar .nav-list.active {
+    display: flex;
+  }
+  
+  header #navbar .nav-list .hamburguer-menu {
+    display: block;
+    background: none;
+    border: none;
+  }
+}
+
+/*SECTION BANNER*/
+
+main {
+  margin-top: 6rem;
+}
+
+main #banner {
+  display: flex;
+  align-items: center; /*Sugestão*/
+  justify-content: space-between;
+  max-width: 1200px;
+  /*padding: 0 2rem;*/
+  margin: 0 auto;
+  padding: 4rem 2rem; /*Sugestão*/
+  background-color: #f9f9f9; /*Sugestão*/
+  flex-wrap: wrap; /*Sugestão*/
+}
+
+main #banner .banner-content {
+  max-width: 600px; /*Sugestão*/
+}
+
+main #banner .banner-content .banner-content-title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  /*margin-bottom: 40px;*/
+  font-size: 2.5rem; /*Sugestão*/
+  color: #21243D; /*Sugestão*/
+  margin-bottom: 1rem;/*Sugestão*/
+}
+
+main #banner .banner-content .banner-content-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 500px;
+  margin-bottom: 38px;
+  color: #555; /*Sugestão*/
+}
+
+main #banner .banner-content .banner-content-btn {
+  /*background-color: #00A8CC;*/
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  /*border-radius: 2px;*/
+  /*padding: 8px 24px;*/
+  border: none;
+
+  /*Sugestão*/
+  background-color: #21243D;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+main #banner .banner-content .banner-content-btn:hover {
+  background-color: #2e67da; /*Quando o mouse passa em cima do botão ele muda de cor*/
+}
+
+main #banner .banner-image {
+  border-radius: 50%; /*Formato da imagem*/
+  width: 100%;
+  max-width: 320px; /*Tamanho da imagem*/
+}
+
+@media (max-width:920px) {
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  main #banner .banner-content {
+    text-align: center;
+  }
+}
+
+/*SECTION POSTS*/
+
+section#posts {
+  margin-top: 71px;
+  background-color: grey; /*#edf7fa;*/
+}
+
+#posts .posts-content {
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#posts .posts-content .posts-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#posts .posts-content .posts-content-header .section-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#posts .posts-content .posts-content-header .view-all-link {
+  text-decoration: none;
+  color: #00a8cc;
+}
+
+#posts .posts-content .posts-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+
+#posts .posts-content .posts-cards .post-card {
+  background-color: #fff;
+  padding: 24px;
+}
+
+#posts .posts-content .posts-cards .post-card h3{
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 37px;
+}
+
+#posts .posts-content .posts-cards .post-card span{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  display: block;
+}
+
+@media (max-width:740px) {
+  #posts .posts-content .posts-cards {
+    flex-direction: column;
+  }
+}
+
+/*Footer*/
+#footer {
+  background-color: black;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #2e67da; /* ou outro destaque da sua paleta */
+}
