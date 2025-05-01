@@ -3,14 +3,17 @@ Projeto Página Estática
 !!Antes de começar a desenvolver
 
 Clonar ou repositório
+
 Use o comando:git clone git@github.com:thaisnascimento2308/Front-End_em_React.git
 Entre na pasta do repositório que você acabou de clonar:
 cd thais-nascimento-front-end-em-react
+
 Crie um branch a partir do branchmain
 Verifique se você está na filialmain
 Exemplo:git branch
 Se você não estiver, mude para um branchmain
 Exemplo:git checkout main
+
 Agora, crie uma filial para qual você vai submeter commitso seu projeto:
 Você deve criar uma branch no seguinte formato: nome-sobrenome-nome-do-projeto;
 Exemplo:git checkout -b thais-nascimento-front-end-em-react
