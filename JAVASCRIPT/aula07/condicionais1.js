@@ -22,5 +22,3 @@ if (mediaAluno >= 7) {
 } else {
     console.log("Reprovado.");
 }
-
-}
