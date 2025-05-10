@@ -1,0 +1,19 @@
+const prompt = require("readline-sync");
+
+let saldo = Number(prompt.question("Qual eh o seu saldo?"))
+
+while (saldo < 0) {
+    saldo = Number(
+        prompt.question("SAldo inválido! Por favor informe novamente: ")
+        );
+}
+
+console.log(saldo);
+
+//Exemplo 2
+
+let notaDoAluno = Number(prompt.question("Informe a nota do aluno: ")) //Number: converter a string digitada em um número.
+
+while (notaDoAluno >= 0) {
+    notaDoAluno = Number(prompt.question("Informe a pŕoxima nota: "))
+}
