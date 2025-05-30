@@ -29,7 +29,17 @@ const calcular = (num1, num2,  funcaoDaOperacao) => funcaoDaOperacao(num1, num2)
 
 //Calcular = 10, 5, somar) => somar(10, 5)
 
-const retorno = calcular(10, 5, multiplicar);
+const retorno = calcular(10, 5, dividir);
 
 console.log(retorno);
 
+console.clear()
+//O calculo que eu quero é: (num1 * num2) + (2 * num1 * num2)
+
+const resultado = calcular(
+    10,
+    5,
+    (num1, num2) => num1 * num2 + 2 * num1 * num2
+);
+
+console.log(resultado);
