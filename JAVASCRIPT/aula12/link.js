@@ -1,0 +1,1 @@
+//link https://www.c-sharpcorner.com/article/simplify-map-reduce-and-filter-in-typescript/

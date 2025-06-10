@@ -1,0 +1,3 @@
+Nome: Thais
+Idade: 31
+Altura: 1.65
