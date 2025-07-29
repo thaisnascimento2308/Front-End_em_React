@@ -37,23 +37,46 @@ contadorElemento.style.width = "150px";
 // Manipular classes
 console.log(botaoDiminuir.classList);
 
-  // botaoAumentar.classList.add("btn");
-  // botaoDiminuir.classList.remove("btn");
+// botaoAumentar.classList.add("btn");
+// botaoDiminuir.classList.remove("btn");
 
-  const themeButton = document.querySelector("#theme");
+const themeButton = document.querySelector("#theme");
 
-  let darkTheme = false;
+let darkTheme;
 
-  themeButton.addEventListener("click", (event) => {
-    darkTheme = !darkTheme;
+// Definindo uma função que será excecutada ao carregar o conteúdo da página/janela
+window.onload = () => {
+  const isDarkThemeStorage = localStorage.getitem("isDarkTheme");
 
-    const body = document.querySelector("body")
+  darkTheme = isDarkThemeStorage === "true" ? true : false;
 
-    if(darkTheme) {
-      body.style.backgroundColor = 'black';
-      body.style.color = 'white';
-    } else {
-      body.style.backgroundColor = 'white';
-      body.style.color = 'black';
-    }
-  });
+  // isDarkThemeStorage >> "true"  => true
+  // isDarkThemeStorage >> "false" => false
+  // isDarkThemeStorage >> null    => false
+
+  const body = document.querySelector("body");
+
+  if (darkTheme) {
+    body.style.backgroundColor = "black";
+    body.style.color = "white";
+  } else {
+    body.style.backgroundColor = "white";
+    body.style.color = "black";
+  }
+};
+
+themeButton.addEventListener("click", () => {
+  darkTheme = !darkTheme;
+
+  localStorage.setItem("isDarckTheme", darkTheme);
+
+  const body = document.querySelector("body");
+
+  if (darkTheme) {
+    body.style.backgroundColor = "black";
+    body.style.color = "white";
+  } else {
+    body.style.backgroundColor = "white";
+    body.style.color = "black";
+  }
+});
