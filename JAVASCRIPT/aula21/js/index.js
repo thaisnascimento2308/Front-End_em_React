@@ -46,7 +46,7 @@ let darkTheme;
 
 // Definindo uma função que será excecutada ao carregar o conteúdo da página/janela
 window.onload = () => {
-  const isDarkThemeStorage = localStorage.getitem("isDarkTheme");
+  const isDarkThemeStorage = localStorage.getItem("isDarkTheme");
 
   darkTheme = isDarkThemeStorage === "true" ? true : false;
 
@@ -68,7 +68,7 @@ window.onload = () => {
 themeButton.addEventListener("click", () => {
   darkTheme = !darkTheme;
 
-  localStorage.setItem("isDarckTheme", darkTheme);
+  localStorage.setItem("isDarkTheme", darkTheme);
 
   const body = document.querySelector("body");
 
