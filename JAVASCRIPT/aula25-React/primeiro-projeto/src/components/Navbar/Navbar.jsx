@@ -2,7 +2,7 @@ import React from 'react';
 import imagem from '../../assets/images/space.jpg';
 import './styles.css';
 
-class Navbar extends React.Component {
+export class Navbar extends React.Component {
   render() {
     return (
     <header>
@@ -19,11 +19,8 @@ class Navbar extends React.Component {
             <li><a href="/">About us</a></li>
           </ul>
         </nav>
-
-        <Navbar/>
       </header>
       )
   }
 }
 
-export default Navbar
