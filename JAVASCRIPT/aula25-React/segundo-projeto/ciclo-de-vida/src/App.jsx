@@ -14,7 +14,10 @@ class App extends React.Component {
 
         <button onClick={() => {
           this.setState({showCounter: !this.state.showCounter}); // Inverte o estado de showCounter
-        }}>{}</button>
+        }}
+        >
+        {this.state.showCounter ? 'Remover Contador' : 'Mostrar Contador'}
+        </button>
       </div>
     );
   }
