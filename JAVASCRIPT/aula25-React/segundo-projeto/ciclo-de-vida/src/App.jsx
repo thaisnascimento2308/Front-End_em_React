@@ -1,4 +1,5 @@
 import React from 'react';
+import { Counter } from '../src/components/Counter/Counter.jsx';
 
 class App extends React.Component {
   constructor() {
@@ -9,15 +10,19 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div>
         <h1>Ciclo de Vida no React</h1>
 
-        <button onClick={() => {
-          this.setState({showCounter: !this.state.showCounter}); // Inverte o estado de showCounter
+        <button 
+        onClick={() => {
+          this.setState({ showCounter: !this.state.showCounter});
         }}
         >
         {this.state.showCounter ? 'Remover Contador' : 'Mostrar Contador'}
         </button>
+
+        { this.state.showCounter ? <Counter /> : null }
+
       </div>
     );
   }
