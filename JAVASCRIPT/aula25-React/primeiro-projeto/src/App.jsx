@@ -22,9 +22,9 @@ export class App extends React.Component {
       <Navbar/>
 
       <section id="articles">
-        <Article title="Designing Dashboards" provider="NASA" description="Descrição do texto. bvfhwbfhwbfwvjsbvjksvbjbvjbvjbvdjvjvjdvbjdbvjbvjBVJSBVJSBVJSBVJSBVJ" thumbnail={article1}/>
+        <Article title="Designing Dashboards" provider="NASA" description="Amet minim mollit non deserunt ullmaco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet." thumbnail={article1}/>
 
-        <Article title="Vibrant Portraits of 2020" provider="SpaceNews" description="Descrição do texto. bvfhwbfhwbfwvjsbvjksvbjbvjbvjbvdjvjvjdvbjdbvjbvjBVJSBVJSBVJSBVJSBVJ" thumbnail={article2}/>
+        <Article title="Vibrant Portraits of 2020" provider="SpaceNews" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, quas? Quod, debitis vel facere laborum pariatur aliquam distinctio rerum! Nihil labore consequuntur non esse distinctio error id dicta totam facilis." thumbnail={article2}/>
 
         <Article title="36 Days of Malayalan type" provider="Spaceflight Now" description="Descrição do texto. bvfhwbfhwbfwvjsbvjksvbjbvjbvjbvdjvjvjdvbjdbvjbvjBVJSBVJSBVJSBVJSBVJ" thumbnail={article3}/>
 
