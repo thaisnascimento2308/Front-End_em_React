@@ -11,6 +11,8 @@ import { Counter } from './components/Counter/Counter';
 //O método render é responsável por retornar o conteúdo HTML que será exibido na tela
 //A classe App é o componente principal da aplicação
 
+//Componente funcional é uma função que retorna HTML.
+
 export class App extends React.Component {
 //Método responsável por renderizar o conteúdo HTM do nosso componente
   render() {
