@@ -1,8 +1,9 @@
 import React from 'react'; // Import React library
+import { Header } from './components/Header/Header'; // Importa o componente Header
 
 function App() { // Define a functional component name App
   return (
-    <h1>React + TypeScript</h1> // Retorna a JSX element
+    <Header/> // Renderiza o componente Header>
   );
 }
 
