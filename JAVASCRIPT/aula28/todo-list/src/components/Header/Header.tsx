@@ -1,7 +1,16 @@
-// Importa o React para usar JSX e definir componentes funcionais
-import React from 'react';
 
+import "./styles.css";
 // Define e exporta o componente funcional Header
 export const Header:React.FC = () => { // Define o componente funcional Header
-  return <h1>Header</h1>
-}
+  return (
+    <header className="header">
+      <div>
+        <h1>MyTodo</h1>
+
+        <span>Bem-vinda, Thais.</span>
+      </div>
+
+      <div>{/*Cards*/}</div>
+    </header>
+  )
+};
