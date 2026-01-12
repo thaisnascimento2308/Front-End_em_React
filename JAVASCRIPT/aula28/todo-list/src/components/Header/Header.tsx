@@ -1,8 +1,12 @@
 
 import { StatsCard } from "../StatsCard/StatsCard";
 import styles from "./styles.module.scss";
+//import { useState } from "react";
+
 // Define e exporta o componente funcional Header
 export const Header:React.FC = () => { // Define o componente funcional Header
+  //const variavel [ estado, funcaoParaAlterarOEstado] = useState(0); // Exemplo de uso do hook useState
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
