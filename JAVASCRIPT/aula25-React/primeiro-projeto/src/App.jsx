@@ -19,7 +19,8 @@ export class App extends React.Component {
     return (
       //Fragment: é um componente que não renderiza nada na tela, mas permite agrupar outros componentes
       <>
-      <Navbar/>
+      <Counter/>
+      {/*<Navbar/>
 
       <section id="articles">
         <Article title="Designing Dashboards" provider="NASA" description="Amet minim mollit non deserunt ullmaco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet." thumbnail={article1}/>
@@ -29,9 +30,8 @@ export class App extends React.Component {
         <Article title="36 Days of Malayalan type" provider="Spaceflight Now" description="Descrição do texto. bvfhwbfhwbfwvjsbvjksvbjbvjbvjbvdjvjvjdvbjdbvjbvjBVJSBVJSBVJSBVJSBVJ" thumbnail={article3}/>
 
         <Article title="Designing Dashboards" provider="NASA" description="Descrição do texto. bvfhwbfhwbfwvjsbvjksvbjbvjbvjbvdjvjvjdvbjdbvjbvjBVJSBVJSBVJSBVJSBVJ" thumbnail={article1}/>
-      </section>
+      </section>*/}
 
-      <Counter/>
       </>
     );
   }
